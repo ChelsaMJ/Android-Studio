@@ -23,6 +23,7 @@ class MainActivity2 : AppCompatActivity() {
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 // Start MainActivity when login is successful
+                //explicit intent
                 val intent = Intent(this@MainActivity2, MainActivity::class.java)
                 startActivity(intent)
             } else {
