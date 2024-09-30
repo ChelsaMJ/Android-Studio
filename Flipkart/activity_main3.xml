@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:backgroundTint="#017BD2"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Search bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_field"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="Search for Products, Brands, and More"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="#039BE5"
+                android:minHeight="48dp"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#FFEB3B"
+                android:text="Search"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Tech Devices Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Devices"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/techLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_1"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Andorid Phones"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_2"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Headphones"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_3"
+                    android:scaleType="fitXY"
+                    android:contentDescription="Earphones"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_13"
+                    android:scaleType="fitXY"
+                    android:contentDescription="Powerbank"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_14"
+                    android:scaleType="fitXY"
+                    android:contentDescription="Keyboard"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Clothes Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Clothes"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/clothesLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_4"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Hoodies"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_5"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Crop Tops and Cargos"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_6"
+                    android:scaleType="fitXY"
+                    android:contentDescription="Tuxedos and Suits"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_15"
+                    android:scaleType="fitXY"
+                    android:contentDescription="pants"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_16"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="shorts"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Jewellery Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Jewellery"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/jewelleryLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_7"
+                    android:contentDescription="Neck chains"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_8"
+                    android:contentDescription="Earrings and Piercings"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_9"
+                    android:contentDescription="Rings"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_17"
+                    android:scaleType="fitXY"
+                    android:contentDescription="choker"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_18"
+                    android:scaleType="fitXY"
+                    android:contentDescription="pendant"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Stationary Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Stationary"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/stationaryLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_10"
+                    android:contentDescription="Sticky Notes"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_11"
+                    android:contentDescription="Designer Pens"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_12"
+                    android:contentDescription="Bookmarks"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_19"
+                    android:scaleType="fitXY"
+                    android:contentDescription="pencils"/>
+
+                <ImageButton
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/img_20"
+                    android:scaleType="fitXY"
+                    android:contentDescription="washi tape"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFEB3B"
+                android:padding="4dp"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/categoriesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFEB3B"
+                android:padding="4dp"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/accountButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFEB3B"
+                android:padding="4dp"
+                android:text="Account"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/cartButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFEB3B"
+                android:padding="4dp"
+                android:text="Cart"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
