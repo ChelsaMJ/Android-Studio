@@ -1,0 +1,10 @@
+<!-- under res>values -->
+
+<resources>
+    <string name="app_name">SnackBarActivity</string>
+    <string name="espanol">potenciar la educación</string>
+    <string name="mala">വിദ്യാഭ്യാസത്തെ ശാക്തീകരിക്കുക</string>
+    <string name="hindi">शिक्ष ा को सशक्त बनाना</string>
+</resources>
+
+<!-- then open editor, refer image -->
