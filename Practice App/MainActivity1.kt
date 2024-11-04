@@ -10,7 +10,7 @@ class MainActivity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_layout_page1)
+        setContentView(R.layout.activity_main1)
 
         val btn = findViewById<Button>(R.id.button3)
         btn.setOnClickListener {
