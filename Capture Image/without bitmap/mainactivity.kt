@@ -1,3 +1,5 @@
+// give permission and open camera
+
 package com.example.application8_10
 
 import android.Manifest
@@ -53,4 +55,4 @@ class Permissions : AppCompatActivity() {
 
 
 
-give permission and open camera
+
